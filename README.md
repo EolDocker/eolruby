@@ -1,2 +1,6 @@
-# eolruby
-Ruby which is needed to run EOL
+ruby
+====
+
+Ruby needed to run Encyclopedia of Life's code
+
+
