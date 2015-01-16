@@ -17,9 +17,6 @@ RUN apt-get update && \
     cd ruby-install-$RUBY_INSTALL_VERSION/ && \
     make install && \
     ruby-install ruby $RUBY_VERSION && \
-    apt-get purge -y build-essential zlib1g-dev libssl-dev \
-      libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev \
-      libxslt1-dev && \
     apt-get autoremove -y && \
     apt-get clean py && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/local/src/*
